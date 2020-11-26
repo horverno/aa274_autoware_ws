@@ -53,12 +53,12 @@ catkin build
 
 
 # Demo Localization
-## Terminal 1:
+### Terminal 1:
 ```
 roscore 
 ```
 
-## Terminal 2:
+### Terminal 2:
 GPS-based localization
 ```
 roslaunch arg_launch Devbot_localization.launch
@@ -68,7 +68,7 @@ or Lidar-based localization
 roslaunch arg_launch Devbot_localization.launch lidar_localization:=true
 ```
 
-# Terminal 3:
+### Terminal 3:
 ```
 roslaunch arg_launch Play_rosbag.launch
 ```
@@ -76,7 +76,7 @@ roslaunch arg_launch Play_rosbag.launch
 
 
 # Demo Path Planning 
-# Terminal 1:
+### Terminal 1:
 ```
 roslaunch vifware_launch simulation.launch
 ```
