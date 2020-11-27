@@ -40,14 +40,13 @@ catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 
 # Install workspace for AA274 lecture
-Clone repository and unzip ROSBAG
+Clone repository
 ```
-git clone https://gitlab.v2c2.at/aa274/aa274_autoware_ws.git ~/ros/aa274_autoware_ws/src
-tar -xvf ~/ros/aa274_autoware_ws/src/arg_localization/arg_data_croix_en_ternois/bagfile/devbot_lap0.tar.xz
+git clone https://github.com/virtual-vehicle-research/aa274_autoware_ws.git ~/ros/aa274_autoware_ws
 cd ~/ros/aa274_autoware_ws/src
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 ```
-Setup for environment which includes several aliases, environment variables, and sources. 
+Setup for environment which includes several aliases, environment variables, and sources 
 ```
 ./setup_bash.sh
 ```	
@@ -56,8 +55,11 @@ Build workspace
 cd ~/ros/aa274_autoware_ws/
 catkin build
 ```
-
-
+Extract recorded data from the racetrack
+```
+cd ~/ros/aa274_autoware_ws/src/arg_localization/arg_data_croix_en_ternois/bagfile
+tar -xvf devbot_lap0.tar.xz
+```
 
 
 
@@ -89,5 +91,4 @@ roslaunch arg_launch Play_rosbag.launch
 ```
 roslaunch vifware_launch simulation.launch
 ```
-
 
