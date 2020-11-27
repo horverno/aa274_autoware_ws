@@ -43,16 +43,15 @@ catkin build --cmake-args -DCMAKE_BUILD_TYPE=Release
 Clone repository
 ```
 git clone https://github.com/virtual-vehicle-research/aa274_autoware_ws.git ~/ros/aa274_autoware_ws
-cd ~/ros/aa274_autoware_ws/src
+cd ~/ros/aa274_autoware_ws
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 ```
 Setup for environment which includes several aliases, environment variables, and sources 
 ```
-./setup_bash.sh
+./setup_environment.sh
 ```	
 Build workspace
 ```
-cd ~/ros/aa274_autoware_ws/
 catkin build
 ```
 Extract recorded data from the racetrack
