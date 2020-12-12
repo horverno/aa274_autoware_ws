@@ -15,9 +15,10 @@
 Installation of required packages
 ```
 sudo apt update
-sudo apt install -y python-catkin-pkg python-rosdep ros-$ROS_DISTRO-catkin
+sudo apt install -y python-catkin-pkg python-rosdep ros-$ROS_DISTRO-catkin python-catkin-tools
 sudo apt install -y python3-pip python3-colcon-common-extensions python3-setuptools python3-vcstool
 sudo apt install ros-$ROS_DISTRO-lanelet2-*
+sudo apt install -y git-lfs
 pip3 install -U setuptools
 ```
 Create workspace for Autoware.AI
@@ -51,6 +52,7 @@ Setup for environment which includes several aliases, environment variables, and
 ./setup_environment.sh
 ```	
 Build workspace
+**Close and open a new terminal to source the Autoware.AI components!**
 ```
 catkin build
 ```
