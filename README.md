@@ -51,9 +51,12 @@ Setup for environment which includes several aliases, environment variables, and
 ```
 ./setup_environment.sh
 ```	
-Build workspace
-**Close and open a new terminal to source the Autoware.AI components!**
+**Build the workspace**
+
+Close and open a new terminal to source the Autoware.AI components!
+
 ```
+cd ~/ros/aa274_autoware_ws
 catkin build
 ```
 Extract recorded data from the racetrack
